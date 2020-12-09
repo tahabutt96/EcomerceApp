@@ -1,0 +1,4 @@
+#Sun Oct 25 02:28:31 PKT 2020
+base.0=/Volumes/ENT/dd1/build/app/intermediates/dex/release/shrunkDex/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
