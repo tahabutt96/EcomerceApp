@@ -17,6 +17,7 @@ class Product {
   String capacity;
   String unit;
   String packageItemsCount;
+  String specialInstructions;
   bool featured;
   bool deliverable;
   Market market;
@@ -39,6 +40,7 @@ class Product {
       capacity = jsonMap['capacity'].toString();
       unit = jsonMap['unit'] != null ? jsonMap['unit'].toString() : '';
       packageItemsCount = jsonMap['package_items_count'].toString();
+      specialInstructions = jsonMap['special_instructions'].toString();
       featured = jsonMap['featured'] ?? false;
       deliverable = jsonMap['deliverable'] ?? false;
       market = jsonMap['market'] != null ? Market.fromJSON(jsonMap['market']) : Market.fromJSON({});
@@ -62,6 +64,7 @@ class Product {
       capacity = '';
       unit = '';
       packageItemsCount = '';
+      specialInstructions = '';
       featured = false;
       deliverable = false;
       market = Market.fromJSON({});
@@ -83,6 +86,7 @@ class Product {
     map["description"] = description;
     map["capacity"] = capacity;
     map["package_items_count"] = packageItemsCount;
+    map["special_instructions"] = specialInstructions;
     return map;
   }
 

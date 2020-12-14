@@ -7,6 +7,7 @@ class Option {
   double price;
   Media image;
   String description;
+  String specialInstructions;
   bool checked;
 
   Option();
@@ -18,6 +19,7 @@ class Option {
       name = jsonMap['name'].toString();
       price = jsonMap['price'] != null ? jsonMap['price'].toDouble() : 0;
       description = jsonMap['description'];
+      specialInstructions = jsonMap['special_instructions'];
       checked = false;
       image = jsonMap['media'] != null && (jsonMap['media'] as List).length > 0 ? Media.fromJSON(jsonMap['media'][0]) : new Media();
     } catch (e) {
@@ -26,6 +28,7 @@ class Option {
       name = '';
       price = 0.0;
       description = '';
+      specialInstructions = '';
       checked = false;
       image = new Media();
       print(e);
@@ -38,6 +41,7 @@ class Option {
     map["name"] = name;
     map["price"] = price;
     map["description"] = description;
+    map["special_instructions"] = specialInstructions;
     return map;
   }
 

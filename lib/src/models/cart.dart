@@ -8,6 +8,7 @@ class Cart {
   double quantity;
   List<Option> options;
   String userId;
+  String specialInstructions;
 
   Cart();
 
@@ -17,11 +18,13 @@ class Cart {
       quantity = jsonMap['quantity'] != null ? jsonMap['quantity'].toDouble() : 0.0;
       product = jsonMap['product'] != null ? Product.fromJSON(jsonMap['product']) : Product.fromJSON({});
       options = jsonMap['options'] != null ? List.from(jsonMap['options']).map((element) => Option.fromJSON(element)).toList() : [];
+      specialInstructions = jsonMap['special_instructions'].toString();
     } catch (e) {
       id = '';
       quantity = 0.0;
       product = Product.fromJSON({});
       options = [];
+      specialInstructions = '';
       print(CustomTrace(StackTrace.current, message: e));
     }
   }
@@ -33,6 +36,7 @@ class Cart {
     map["product_id"] = product.id;
     map["user_id"] = userId;
     map["options"] = options.map((element) => element.id).toList();
+    map["special_instructions"] = specialInstructions;
     return map;
   }
 

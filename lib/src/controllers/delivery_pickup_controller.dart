@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:markets/src/pages/payment_methods.dart';
 
 import '../../generated/l10n.dart';
 import '../models/address.dart' as model;
@@ -54,7 +55,7 @@ class DeliveryPickupController extends CartController {
   }
 
   PaymentMethod getDeliveryMethod() {
-    return list.pickupList.elementAt(1);
+    return list.pickupList.elementAt(0);
   }
 
   void toggleDelivery() {
@@ -85,6 +86,14 @@ class DeliveryPickupController extends CartController {
 
   @override
   void goCheckout(BuildContext context) {
-    Navigator.of(context).pushNamed(getSelectedMethod().route);
+    Scaffold.of(context).showSnackBar(new SnackBar(
+        content: new Text('Please select Delivery Option')));
+    // Navigator.of(context).pushNamed(getSelectedMethod().route);
+    if(getSelectedMethod() == null) {
+    }
+    else {
+      Navigator.of(context).push(
+          MaterialPageRoute(builder: (context) => PaymentMethodsWidget()));
+    }
   }
 }

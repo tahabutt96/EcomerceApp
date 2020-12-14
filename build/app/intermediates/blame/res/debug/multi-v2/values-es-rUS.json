@@ -4,41 +4,7 @@
             "outputFile": "C:\\Users\\Taha\\AndroidStudioProjects\\FreelanceWork\\dd1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rUS\\values-es-rUS.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\e42fb0fd0691aab883bcd83dfd955a67\\jetified-firebase-messaging-20.3.0\\res\\values-es-rUS\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "211",
-                        "endColumns": "100",
-                        "endOffsets": "311"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "5656",
-                        "endColumns": "104",
-                        "endOffsets": "5756"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\736ea31b0bb3f2c8b7d05b6a2951d310\\jetified-play-services-basement-17.2.1\\res\\values-es-rUS\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "204",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "4031",
-                        "endColumns": "204",
-                        "endOffsets": "4231"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\695abac1559fa7c194284555d1931e62\\core-1.2.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\bf8fad9e05787cd3a3dbe4b5900910f7\\core-1.2.0\\res\\values-es-rUS\\values-es-rUS.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -55,7 +21,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\27293cbc75e5668a50aafe3c6066b92e\\jetified-play-services-base-17.2.1\\res\\values-es-rUS\\values.xml",
+                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\054b40a60fb15d83a28a106284cd6aaf\\jetified-play-services-basement-17.2.1\\res\\values-es-rUS\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "204",
+                        "endOffsets": "455"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4031",
+                        "endColumns": "204",
+                        "endOffsets": "4231"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\e65bd41917a2d86f5f58d6653b59bd8a\\jetified-firebase-messaging-20.3.0\\res\\values-es-rUS\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "211",
+                        "endColumns": "100",
+                        "endOffsets": "311"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "5656",
+                        "endColumns": "104",
+                        "endOffsets": "5756"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\4c1c6f8855a76191894ad972c7d9ec51\\play-services-base-17.2.1\\res\\values-es-rUS\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -72,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\08a11306907fa84699584020f584a78a\\appcompat-1.0.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\b32130cd8c67cbe97f62d74d5b6a78e7\\appcompat-1.0.0\\res\\values-es-rUS\\values-es-rUS.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

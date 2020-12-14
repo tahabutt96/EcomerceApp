@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:markets/src/pages/cart.dart';
 
 import '../elements/DrawerWidget.dart';
 import '../elements/FilterWidget.dart';
@@ -56,9 +57,12 @@ class _PagesWidgetState extends State<PagesWidget> {
         case 0:
           widget.currentPage = NotificationsWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
+        // case 1: //if u need map u can uncomment it
+        //   widget.currentPage = MapWidget(parentScaffoldKey: widget.scaffoldKey, routeArgument: widget.routeArgument);
+        //   break;
         case 1:
-          widget.currentPage = MapWidget(parentScaffoldKey: widget.scaffoldKey, routeArgument: widget.routeArgument);
-          break;
+          widget.currentPage = CartWidget();
+        break;
         case 2:
           widget.currentPage = HomeWidget(parentScaffoldKey: widget.scaffoldKey);
           break;
@@ -104,7 +108,7 @@ class _PagesWidgetState extends State<PagesWidget> {
               title: new Container(height: 0.0),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.location_on),
+              icon: Icon(Icons.shopping_cart),
               title: new Container(height: 0.0),
             ),
             BottomNavigationBarItem(

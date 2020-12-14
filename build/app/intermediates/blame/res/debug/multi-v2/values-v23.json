@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Taha\\AndroidStudioProjects\\FreelanceWork\\dd1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\08a11306907fa84699584020f584a78a\\appcompat-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Taha\\.gradle\\caches\\transforms-2\\files-2.1\\b32130cd8c67cbe97f62d74d5b6a78e7\\appcompat-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

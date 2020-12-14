@@ -161,7 +161,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                             style: Theme.of(context).textTheme.caption.merge(TextStyle(color: Theme.of(context).primaryColor)),
                                           )
                                         : Text(
-                                            S.of(context).pickup,
+                                            S.of(context).delivery,
                                             style: Theme.of(context).textTheme.caption.merge(TextStyle(color: Theme.of(context).primaryColor)),
                                           ),
                                   ),
@@ -224,7 +224,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                       child: FlatButton(
                                         padding: EdgeInsets.all(0),
                                         onPressed: () {
-                                          Navigator.of(context).pushNamed('/Pages', arguments: new RouteArgument(id: '1', param: _con.market));
+                                          // Navigator.of(context).pushNamed('/Pages', arguments: new RouteArgument(id: '1', param: _con.market));
                                         },
                                         child: Icon(
                                           Icons.directions,

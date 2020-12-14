@@ -279,10 +279,28 @@ class S {
     );
   }
 
+  String get please_let_us_know_if_you_are_allergic_to_anything_or_if_we_need_to_avoid_anything {
+    return Intl.message(
+      'Please let us know if you are allergic to anything or if we need to avoid anything',
+      name: 'please_let_us_know_if_you_are_allergic_to_anything_or_if_we_need_to_avoid_anything',
+      desc: '',
+      args: [],
+    );
+  }
+
   String get reviews {
     return Intl.message(
       'Reviews',
       name: 'reviews',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get special_instructions {
+    return Intl.message(
+      'Special instructions',
+      name: 'special_instructions',
       desc: '',
       args: [],
     );
@@ -1388,8 +1406,8 @@ class S {
 
   String get delivery_or_pickup {
     return Intl.message(
-      'Delivery or Pickup',
-      name: 'delivery_or_pickup',
+      'Delivery',
+      name: 'delivery',
       desc: '',
       args: [],
     );
@@ -1561,6 +1579,14 @@ class S {
     return Intl.message(
       'Pickup your product from the market',
       name: 'pickup_your_product_from_the_market',
+      desc: '',
+      args: [],
+    );
+  }
+  String get delivery_of_your_product_from_the_market {
+    return Intl.message(
+      'Select your delivery',
+      name: 'delivery_of_your_product_from_the_market',
       desc: '',
       args: [],
     );
@@ -1739,12 +1765,21 @@ class S {
 
   String get pay_on_pickup {
     return Intl.message(
-      'Pay on Pickup',
-      name: 'pay_on_pickup',
+      'Delivery in 3 Days',
+      name: 'delivery_in_3_days',
       desc: '',
       args: [],
     );
   }
+  String get pay_on_delivery {
+    return Intl.message(
+      'Delivery in 3 Days',
+      name: 'delivery_in_3_days',
+      desc: '',
+      args: [],
+    );
+  }
+
 
   String get click_to_pay_with_your_visa_card {
     return Intl.message(
@@ -1784,8 +1819,8 @@ class S {
 
   String get click_to_pay_on_pickup {
     return Intl.message(
-      'Click to pay on pickup',
-      name: 'click_to_pay_on_pickup',
+      'We will deliver in minimum 3 business days',
+      name: 'we_will_deliver_in_3_working_days',
       desc: '',
       args: [],
     );

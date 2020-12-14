@@ -80,7 +80,7 @@ class CardWidget extends StatelessWidget {
                             style: Theme.of(context).textTheme.caption.merge(TextStyle(color: Theme.of(context).primaryColor)),
                           )
                         : Text(
-                            S.of(context).pickup,
+                            S.of(context).delivery,
                             style: Theme.of(context).textTheme.caption.merge(TextStyle(color: Theme.of(context).primaryColor)),
                           ),
                   ),
@@ -123,15 +123,15 @@ class CardWidget extends StatelessWidget {
                 Expanded(
                   child: Column(
                     children: <Widget>[
-                      FlatButton(
-                        padding: EdgeInsets.all(0),
-                        onPressed: () {
-                          Navigator.of(context).pushNamed('/Pages', arguments: new RouteArgument(id: '1', param: market));
-                        },
-                        child: Icon(Icons.directions, color: Theme.of(context).primaryColor),
-                        color: Theme.of(context).accentColor,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-                      ),
+                      // FlatButton(
+                      //   padding: EdgeInsets.all(0),
+                      //   onPressed: () {
+                      //     Navigator.of(context).pushNamed('/Pages', arguments: new RouteArgument(id: '1', param: market));
+                      //   },
+                      //   child: Icon(Icons.directions, color: Theme.of(context).primaryColor),
+                      //   color: Theme.of(context).accentColor,
+                      //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                      // ),
                       market.distance > 0
                           ? Text(
                               Helper.getDistance(market.distance, Helper.of(context).trans(setting.value.distanceUnit)),

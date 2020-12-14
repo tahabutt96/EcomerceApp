@@ -28,6 +28,7 @@ class ProductWidget extends StatefulWidget {
 
 class _ProductWidgetState extends StateMVC<ProductWidget> {
   ProductController _con;
+  TextEditingController _abc = TextEditingController();
 
   _ProductWidgetState() : super(ProductController()) {
     _con = controller;
@@ -231,6 +232,39 @@ class _ProductWidgetState extends StateMVC<ProductWidget> {
                                   dense: true,
                                   contentPadding: EdgeInsets.symmetric(vertical: 10),
                                   leading: Icon(
+                                    Icons.add_circle_outline,
+                                    color: Theme.of(context).hintColor,
+                                  ),
+                                  title: Text(
+                                    S.of(context).special_instructions,
+                                    style: Theme.of(context).textTheme.subtitle1,
+                                  ),
+                                  subtitle: Text(
+                                    S.of(context).please_let_us_know_if_you_are_allergic_to_anything_or_if_we_need_to_avoid_anything,
+                                    style: Theme.of(context).textTheme.caption,)
+                                ),
+                                Container(
+                                  child: TextField(
+                                    controller: _abc,
+                                    decoration: new InputDecoration(
+                                        labelText: 'e.g No Butter',
+                                        labelStyle: Theme.of(context).textTheme.subtitle1,
+                                        focusedBorder: new OutlineInputBorder(
+                                            borderSide: new BorderSide(color: Colors.green)
+                                        ),
+                                        enabledBorder: new OutlineInputBorder(
+                                            borderSide: new BorderSide(color: Colors.green)
+                                        )
+                                    ),
+                                    keyboardType: TextInputType.multiline,
+                                    minLines: 2,//Normal textInputField will be displayed
+                                    maxLines: 3,// when user presses enter it will adapt to it
+                                  ),
+                                ),
+                                ListTile(
+                                  dense: true,
+                                  contentPadding: EdgeInsets.symmetric(vertical: 10),
+                                  leading: Icon(
                                     Icons.recent_actors,
                                     color: Theme.of(context).hintColor,
                                   ),
@@ -355,6 +389,9 @@ class _ProductWidgetState extends StateMVC<ProductWidget> {
                                       width: MediaQuery.of(context).size.width - 110,
                                       child: FlatButton(
                                         onPressed: () {
+                                          setState(() {
+                                            print(_abc.text);
+                                          });
                                           if (currentUser.value.apiToken == null) {
                                             Navigator.of(context).pushNamed("/Login");
                                           } else {

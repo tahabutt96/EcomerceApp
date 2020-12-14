@@ -72,6 +72,7 @@ class ProductController extends ControllerMVC {
     _newCart.product = product;
     _newCart.options = product.options.where((element) => element.checked).toList();
     _newCart.quantity = this.quantity;
+    _newCart.specialInstructions = product.specialInstructions;
     // if product exist in the cart then increment quantity
     var _oldCart = isExistInCart(_newCart);
     if (_oldCart != null) {
